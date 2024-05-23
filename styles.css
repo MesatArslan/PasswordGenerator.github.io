@@ -1,0 +1,179 @@
+/* Common styles */
+body {
+    margin: 0%;
+}
+
+.upper-part {
+    padding: 5px 10px ;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #8c8c8c;
+    border-radius: 1%;
+}
+
+#toggle-mode {
+    padding: 5px 9px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: transparent;
+    margin-right: 10px;
+}
+
+.wrapper {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+#password-display {
+    margin-bottom: 20px;
+}
+
+#password {
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.controls label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.controls input {
+    width: 100%;
+}
+
+#length {       
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 9px;
+    background: #9f9f9f;
+    border-radius: 10px;
+    outline: none;
+    opacity: 0.8;
+    transition: opacity .2s;
+}
+
+#length:hover {
+    opacity: 1;
+}
+
+#length::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#length-value {
+    display: block;
+    margin-top: 10px;
+}
+
+.checkboxes {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.checkboxes h3 {
+    margin-left: 15%;
+}
+
+.checkboxes label {
+    display: block;
+}
+
+.checkboxes label input {
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background-color: #000000;
+    color: #f5f5f5;
+}
+
+.upper-part.dark-mode {
+    background: #f5f5f5; 
+}
+
+.container.dark-mode {
+    background: #1a1a1a;
+    color: #fff;
+}
+
+.controls.dark-mode label {
+    color: #fff;
+}
+
+#password-display.dark-mode {
+    border-color: #666;
+}
+
+
+
+/* Light mode */
+body.light-mode {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.upper-part.light-mode {
+    background: #8c8c8c;
+}
+
+.container.light-mode {
+    background: white;
+    color: #333;
+}
+
+.controls.light-mode label {
+    color: #333;
+}
+
+#password-display.light-mode {
+    border-color: #ccc;
+}
+
+
